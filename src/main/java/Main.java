@@ -30,8 +30,8 @@ public class Main {
         driver.get("https://demowebshop.tricentis.com/notebooks");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement prviNotebook = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@value='Add to cart'])[1]")));
-        prviNotebook.click();
+        WebElement notebook = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@value='Add to cart'])[1]")));
+        notebook.click();
 
         driver.get("https://demowebshop.tricentis.com/cart");
 
